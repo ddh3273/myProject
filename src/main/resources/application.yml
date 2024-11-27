@@ -1,0 +1,15 @@
+server:
+  port: 9090
+ip: localhost
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 718513
+#    url: jdbc:mysql://localhost:3306/demoo?useSSL=true&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
+    url: jdbc:mysql://${ip}:3306/demoo?useSSL=true&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
+  servlet:
+    multipart:
+      max-file-size: 20MB
+      max-request-size: 20MB
+
